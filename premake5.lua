@@ -1,7 +1,7 @@
 project "GLFW"
 	kind "StaticLib"
 	language "C"
-	staticruntime "on"
+	staticruntime "on" -- MultiThreaded instead of "off" = MultiThreadedDLL
 	warnings "off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
